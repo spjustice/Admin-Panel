@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Главная</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <!-- WRAPPER start -->
+   <div class="wrapper">
+
+
+      <!-- MAIN start  -->
+      <main class="main support">
+
+         <!-- CONTENT start  -->
+         <div class="content">
+
+            <aside class="sidebar">
+               <div class="sidebar__wrap">
+                  <div class="sidebar__logo logo">
+                     <img src="img/logo.svg" alt="">
+                  </div>
+                  <nav class="sidebar__menu">
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-info"></span>
+                        Про бота
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-bell"></span>
+                        Сповіщення
+                     </a>
+                     <a href="#" class="sidebar__item active">
+                        <span class="icon icon-headphones"></span>
+                        Підтримка
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-graph"></span>
+                        Статистика
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-pen"></span>
+                        Редагування боту
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-paper1"></span>
+                        Сценарії
+                     </a>
+                  </nav>
+
+
+                  <a href="#" class="sidebar__item sidebar__item--exit">
+                     <span class="icon icon-exit"></span>
+                     Вийти
+                  </a>
+               </div>
+            </aside>
+
+            <div class="support__content">
+               <section class="support__section">
+                  <h2 class="support__title h1">Фільтри:</h2>
+                  <div class="support__section-body">
+                     <div class="support__block">
+                        <h4 class="support__subtitle">Тип користувача:</h4>
+                        <div class="support__row">
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Виборець
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Член ВК
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Партія/Кандидат
+                              <span class="icon icon-close"></span>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="support__block">
+                        <h4 class="support__subtitle">Тип питання:</h4>
+                        <div class="support__row">
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Загальне
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Технічне
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              По змісту
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Інше
+                              <span class="icon icon-close"></span>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="support__block">
+                        <h4 class="support__subtitle">Статус питання:</h4>
+                        <div class="support__row">
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Нове питання
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Користувач створює запит
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Відповідь надана оператором
+                              <span class="icon icon-close"></span>
+                           </button>
+                           <button type="button" class="support__select-btn btn btn-select">
+                              Інше
+                              <span class="icon icon-close"></span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <div class="support__section">
+                  <h2 class="support__title h1">Список заявок:</h2>
+                  <div class="support__section-body support__grid">
+                     <div class="support__card card-application card-application--green">
+                        <h4 class="card-application__name">Андрій Розумовський</h4>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип користувача:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Виборець
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Виборець</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Загальне
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Загальне</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Статус питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Користувач створює запит
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Користувач створює запит</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__col">
+                           <h5 class="card-application__term">Питання:</h5>
+                           <p class="card-application__text">
+                              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                              Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                              шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается
+                              при простой дубликации "Здесь ваш текст..
+                           </p>
+                        </div>
+                        <button type="button" class="card-application__btn btn">Відповісти</button>
+                     </div>
+                     <div class="support__card card-application">
+                        <h4 class="card-application__name">Андрій Розумовський</h4>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип користувача:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Виборець
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Виборець</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Загальне
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Загальне</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Статус питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Користувач створює запит
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Користувач створює запит</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__col">
+                           <h5 class="card-application__term">Питання:</h5>
+                           <p class="card-application__text">
+                              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                              Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                              шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается
+                              при простой дубликации "Здесь ваш текст..
+                           </p>
+                        </div>
+                        <button type="button" class="card-application__btn btn">Відповісти</button>
+                     </div>
+                     <div class="support__card card-application card-application--orange">
+                        <h4 class="card-application__name">Андрій Розумовський</h4>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип користувача:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Виборець
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Виборець</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Загальне
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Загальне</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Статус питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Користувач створює запит
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Користувач створює запит</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__col">
+                           <h5 class="card-application__term">Питання:</h5>
+                           <p class="card-application__text">
+                              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                              Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                              шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается
+                              при простой дубликации "Здесь ваш текст..
+                           </p>
+                        </div>
+                        <button type="button" class="card-application__btn btn">Відповісти</button>
+                     </div>
+                     <div class="support__card card-application">
+                        <h4 class="card-application__name">Андрій Розумовський</h4>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип користувача:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Виборець
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Виборець</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Тип питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Загальне
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Загальне</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__row">
+                           <h5 class="card-application__term">Статус питання:</h5>
+                           <div class="card-application__descr select">
+                              <div class="select__wrap"></div>
+                              <div class="select__main">
+                                 <button type="button" class="select__head">
+                                    <span class="select__head-item">
+                                       Користувач створює запит
+                                    </span>
+                                    <span class="icon icon-triangle-down"></span>
+                                 </button>
+                                 <div class="select__body">
+                                    <button type="button" class="select__item">Користувач створює запит</button>
+                                    <button type="button" class="select__item">Член ВК</button>
+                                    <button type="button" class="select__item">Партія/кандидат</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-application__col">
+                           <h5 class="card-application__term">Питання:</h5>
+                           <p class="card-application__text">
+                              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                              Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                              шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается
+                              при простой дубликации "Здесь ваш текст..
+                           </p>
+                        </div>
+                        <button type="button" class="card-application__btn btn">Відповісти</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+         <!-- CONTENT end -->
+
+      </main>
+      <!-- MAIN end -->
+
+   </div>
+   <!-- WRAPPER end -->
+
+
+
+   <!-- SCRIPTS start  -->
+   <script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

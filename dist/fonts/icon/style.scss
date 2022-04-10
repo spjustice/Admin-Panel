@@ -1,0 +1,172 @@
+@import "variables";
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ibv1we") format("truetype"),
+    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ibv1we") format("woff"),
+    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ibv1we##{$icomoon-font-family}") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-peoples {
+  &:before {
+    content: $icon-peoples;
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus;
+  }
+}
+.icon-exit {
+  &:before {
+    content: $icon-exit;
+  }
+}
+.icon-paper1 {
+  &:before {
+    content: $icon-paper1;
+  }
+}
+.icon-pen {
+  &:before {
+    content: $icon-pen;
+  }
+}
+.icon-bell {
+  &:before {
+    content: $icon-bell;
+  }
+}
+.icon-attach {
+  &:before {
+    content: $icon-attach;
+  }
+}
+.icon-calendar {
+  &:before {
+    content: $icon-calendar;
+  }
+}
+.icon-close-window {
+  &:before {
+    content: $icon-close-window;
+  }
+}
+.icon-export {
+  &:before {
+    content: $icon-export;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-file {
+  &:before {
+    content: $icon-file;
+  }
+}
+.icon-graph {
+  &:before {
+    content: $icon-graph;
+  }
+}
+.icon-headphones {
+  &:before {
+    content: $icon-headphones;
+  }
+}
+.icon-import {
+  &:before {
+    content: $icon-import;
+  }
+}
+.icon-info {
+  &:before {
+    content: $icon-info;
+  }
+}
+.icon-message {
+  &:before {
+    content: $icon-message;
+  }
+}
+.icon-refresh {
+  &:before {
+    content: $icon-refresh;
+  }
+}
+.icon-send {
+  &:before {
+    content: $icon-send;
+  }
+}
+.icon-sort {
+  &:before {
+    content: $icon-sort;
+  }
+}
+.icon-source {
+  &:before {
+    content: $icon-source;
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram;
+  }
+}
+.icon-timer {
+  &:before {
+    content: $icon-timer;
+  }
+}
+.icon-triangle-down {
+  &:before {
+    content: $icon-triangle-down;
+  }
+}
+.icon-triangle-left {
+  &:before {
+    content: $icon-triangle-left;
+  }
+}
+.icon-triangle-right {
+  &:before {
+    content: $icon-triangle-right;
+  }
+}
+.icon-verified {
+  &:before {
+    content: $icon-verified;
+  }
+}
+.icon-viber {
+  &:before {
+    content: $icon-viber;
+  }
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Главная</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <!-- WRAPPER start -->
+   <div class="wrapper">
+
+
+      <!-- MAIN start  -->
+      <main class="main bot-editing">
+
+         <!-- CONTENT start  -->
+         <div class="content">
+
+            <aside class="sidebar">
+               <div class="sidebar__wrap">
+                  <div class="sidebar__logo logo">
+                     <img src="img/logo.svg" alt="">
+                  </div>
+                  <nav class="sidebar__menu">
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-info"></span>
+                        Про бота
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-bell"></span>
+                        Сповіщення
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-headphones"></span>
+                        Підтримка
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-graph"></span>
+                        Статистика
+                     </a>
+                     <a href="#" class="sidebar__item active">
+                        <span class="icon icon-pen"></span>
+                        Редагування боту
+                     </a>
+                     <a href="#" class="sidebar__item">
+                        <span class="icon icon-paper1"></span>
+                        Сценарії
+                     </a>
+                  </nav>
+
+
+                  <a href="#" class="sidebar__item sidebar__item--exit">
+                     <span class="icon icon-exit"></span>
+                     Вийти
+                  </a>
+               </div>
+            </aside>
+
+            <div class="bot-editing__content">
+               <div class="bot-editing__tabs tabs">
+                  <div class="bot-editing__tabs-head tabs__head">
+                     <button type="button" class="bot-editing__tabs-head-item h1 tabs__head-item active">База
+                        знань</button>
+                     <button type="button" class="bot-editing__tabs-head-item h1 tabs__head-item">База
+                        документів</button>
+                     <button type="button" class="bot-editing__btn-edit icon icon-pen"></button>
+                  </div>
+                  <div class="bot-editing__tabs-body tabs__body">
+                     <div class="bot-editing__tabs-body-item tabs__body-item active">
+                        <div class="bot-editing__menu">
+                           <div class="bot-editing__menu-row">
+                              <div class="bot-editing__menu-item">
+                                 <h3 class="bot-editing__subtitle">Пункти Меню</h3>
+                                 <div class="bot-editing__select select">
+                                    <div class="select__wrap"></div>
+                                    <div class="select__main">
+                                       <button type="button" class="select__head">
+                                          <span class="select__head-item">
+                                             Всеукраїнський референдум
+                                          </span>
+                                          <span class="icon icon-triangle-down"></span>
+                                       </button>
+                                       <div class="select__body">
+                                          <button type="button" class="select__item">Всеукраїнський референдум</button>
+                                          <button type="button" class="select__item">Про вибори</button>
+                                          <button type="button" class="select__item">Принципи виборчого права</button>
+                                          <button type="button" class="select__item">Про виборчі системи</button>
+                                          <button type="button" class="select__item">Коли вибори</button>
+                                          <button type="button" class="select__item">Державний реєстр виборців</button>
+                                          <button type="button" class="select__item">Що там у ЦВК?</button>
+                                          <button type="button" class="select__item">До головного меню</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="bot-editing__menu-item">
+                                 <div class="bot-editing__input input__block">
+                                    <h5 class="input__title">Назва кнопки</h5>
+                                    <div class="input__box">
+                                       <input type="text" class="input input" placeholder="Всеукраїнський референдум">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="bot-editing__menu-item">
+                                 <div class="bot-editing__input input__block">
+                                    <h5 class="input__title">Текст кнопки</h5>
+                                    <div class="input__box">
+                                       <input type="text" class="input input" placeholder='Ви у розділі " Принципи виборчого
+                                          права" 👇'>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="bot-editing__menu-row-btns">
+                              <button type="button" class="bot-editing__menu-btn-add btn btn-select">Додати пункт меню
+                                 +</button>
+                           </div>
+                        </div>
+                        <div class="bot-editing__submenu">
+                           <h3 class="bot-editing__subtitle">Пункти Підменю</h3>
+                           <div class="bot-editing__submenu-flex">
+                              <div class="bot-editing__submenu-leftside">
+
+                                 <div class="bot-editing__submenu-edit">
+                                    <button class="bot-editing__submenu-btn btn btn-select active"><span
+                                          class="icon icon-close"></span>Хто може призначити
+                                       (проголосити)?</button>
+                                    <div class="bot-editing__submenu-edit-body">
+                                       <div class="bot-editing__submenu-edit-input input__block">
+                                          <h5 class="input__title">Назва кнопки</h5>
+                                          <div class="input__box">
+                                             <input type="text" class="input input"
+                                                placeholder="Хто може призначити (проголосити)?">
+                                          </div>
+                                       </div>
+                                       <div class="bot-editing__submenu-edit-input input__block">
+                                          <h5 class="input__title">Текст після нажаття кнопки</h5>
+                                          <div class="input__box">
+                                             <textarea class="textarea input" rows="4"
+                                                placeholder="Введіть текст"></textarea>
+                                          </div>
+                                       </div>
+                                       <div class="bot-editing__submenu-edit-input input__block">
+                                          <h5 class="input__title">Назва кнопки з посиланням</h5>
+                                          <div class="input__box">
+                                             <input type="text" class="input input"
+                                                placeholder="Хто може призначити (проголосити)?">
+                                          </div>
+                                       </div>
+                                       <div class="bot-editing__submenu-edit-input input__block">
+                                          <h5 class="input__title">Посилання</h5>
+                                          <div class="input__box">
+                                             <input type="text" class="input input--icon-left"
+                                                placeholder="Вставте гіперпосилання">
+                                             <span class="icon icon-source"></span>
+                                          </div>
+                                       </div>
+                                       <div class="bot-editing__submenu-edit-btns">
+                                          <button type="button"
+                                             class="bot-editing__submenu-edit-btn-cancel btn btn-select">Скасувати
+                                             зміни</button>
+                                          <button type="button" class="bot-editing__submenu-edit-btn-save btn">Зберегти
+                                             зміни</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Які питання можуть бути
+                                    предметом?
+                                 </button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Референдум не можна проводити
+                                 </button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Порядок призначення Президентом
+                                    та ВРУ</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Референдум за народною
+                                    ініціативою</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Про виборчі системи</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Про виборчі системи</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Реєстрація ініціативної
+                                    групи</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Збір підписів ініціативною
+                                    групою</button>
+                              </div>
+                              <div class="bot-editing__submenu-rightside">
+                                 <button class="bot-editing__submenu-btn-add btn btn-select">Додати пункт підменю
+                                    +</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bot-editing__tabs-body-item tabs__body-item">
+                        <div class="bot-editing__menu">
+                           <div class="bot-editing__menu-row">
+                              <div class="bot-editing__menu-item">
+                                 <h3 class="bot-editing__subtitle">Пункти Меню</h3>
+                                 <div class="bot-editing__select select">
+                                    <div class="select__wrap"></div>
+                                    <div class="select__main">
+                                       <button type="button" class="select__head">
+                                          <span class="select__head-item">
+                                             Всеукраїнський референдум
+                                          </span>
+                                          <span class="icon icon-triangle-down"></span>
+                                       </button>
+                                       <div class="select__body">
+                                          <button type="button" class="select__item">Всеукраїнський референдум</button>
+                                          <button type="button" class="select__item">Про вибори</button>
+                                          <button type="button" class="select__item">Принципи виборчого права</button>
+                                          <button type="button" class="select__item">Про виборчі системи</button>
+                                          <button type="button" class="select__item">Коли вибори</button>
+                                          <button type="button" class="select__item">Державний реєстр виборців</button>
+                                          <button type="button" class="select__item">Що там у ЦВК?</button>
+                                          <button type="button" class="select__item">До головного меню</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="bot-editing__menu-item">
+                                 <div class="bot-editing__input input__block">
+                                    <h5 class="input__title">Назва кнопки</h5>
+                                    <div class="input__box">
+                                       <input type="text" class="input input" placeholder="Всеукраїнський референдум">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="bot-editing__menu-item">
+                                 <div class="bot-editing__input input__block">
+                                    <h5 class="input__title">Текст кнопки</h5>
+                                    <div class="input__box">
+                                       <input type="text" class="input input" placeholder='Ви у розділі " Принципи виборчого
+                                          права" 👇'>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="bot-editing__menu-row-btns">
+                              <button type="button" class="bot-editing__menu-btn-add btn btn-select">Додати пункт меню
+                                 +</button>
+                           </div>
+                        </div>
+                        <div class="bot-editing__submenu">
+                           <h3 class="bot-editing__subtitle">Пункти Підменю</h3>
+                           <div class="bot-editing__submenu-flex">
+                              <div class="bot-editing__submenu-leftside">
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Які питання можуть бути
+                                    предметом?
+                                 </button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Референдум не можна проводити
+                                 </button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Порядок призначення Президентом
+                                    та ВРУ</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Референдум за народною
+                                    ініціативою</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Про виборчі системи</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Про виборчі системи</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Реєстрація ініціативної
+                                    групи</button>
+                                 <button class="bot-editing__submenu-btn btn btn-select"><span
+                                       class="icon icon-close"></span>Збір підписів ініціативною
+                                    групою</button>
+                              </div>
+                              <div class="bot-editing__submenu-rightside">
+                                 <button class="bot-editing__submenu-btn-add btn btn-select">Додати пункт підменю
+                                    +</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+         <!-- CONTENT end -->
+
+      </main>
+      <!-- MAIN end -->
+
+   </div>
+   <!-- WRAPPER end -->
+
+
+
+   <!-- SCRIPTS start  -->
+   <script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

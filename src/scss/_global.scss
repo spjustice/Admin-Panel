@@ -1,0 +1,357 @@
+html,
+body {
+	height: 100%;
+	font-family: "Inter";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: $black;
+	overflow-x: hidden;
+}
+textarea {
+	resize: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	position: relative;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container {
+	// max-width: px;
+	// margin: 0 auto;
+	// padding: 0px 15px;
+	// height: 100%;
+}
+input,
+textarea {
+	appearance: none;
+	outline: none;
+}
+
+//Ввод данных конец
+
+.checkbox {
+	position: relative;
+}
+.checkbox-none,
+.radio-none {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.checkbox-style {
+	display: block;
+	cursor: pointer;
+}
+.checkbox-none:checked + .checkbox-style {
+}
+.radio-style {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+.radio-none:checked + .radio-style::before {
+	content: " ";
+}
+.content {
+	display: flex;
+}
+.logo {
+	width: 132px;
+	height: 76px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+.input {
+	width: 100%;
+	padding: 14px 11px;
+	font-size: 16px;
+	border: 1px solid $gray2;
+	border-radius: 5px;
+	color: $black;
+	font-family: "Gotham Pro";
+	transition: 0.2s;
+	&::placeholder {
+		color: $gray;
+	}
+	&:hover {
+		border-color: $gray;
+	}
+	&:focus {
+		border-color: $black2;
+	}
+	&--icon-left {
+		padding-left: 39px;
+	}
+	&--icon-right {
+		padding-right: 39px;
+		& + .icon {
+			left: unset !important;
+			right: 11px;
+			pointer-events: visible !important;
+		}
+	}
+	&__block {
+		font-family: "Gotham Pro";
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		&--error {
+			.input {
+				border-color: $red;
+			}
+			.input__error {
+				display: block;
+			}
+		}
+	}
+	&__title {
+		font-family: "Inter";
+		font-weight: 400;
+	}
+	&__flex-box {
+		display: flex;
+		column-gap: 25px;
+	}
+	&__box {
+		position: relative;
+		.icon {
+			width: 20px;
+			height: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 50%;
+			left: 11px;
+			font-size: 18px;
+			transform: translateY(-50%);
+			color: $gray;
+			pointer-events: none;
+			&-timer {
+				font-size: 19px;
+			}
+			&-source {
+				font-size: 10px;
+			}
+		}
+	}
+
+	&__error {
+		font-size: 14px;
+		color: $red;
+		display: none;
+	}
+}
+.sidebar {
+	flex: none;
+	width: 290px;
+	box-shadow: 4px 4px 25px rgba(192, 183, 201, 0.3);
+
+	overflow-y: auto;
+	position: sticky;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	&__wrap {
+		min-height: 100vh;
+		width: 100%;
+		padding: 40px 0;
+		background: #fbfcff;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		margin-left: 40px;
+		margin-bottom: 105px;
+	}
+
+	&__menu {
+		margin-bottom: 50px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 17px 20px 17px 40px;
+		column-gap: 16px;
+		font-size: 20px;
+		position: relative;
+		transition: 0.2s;
+		border-radius: 5px;
+		&:hover {
+			background: $gray3;
+		}
+		&:active,
+		&.active {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 2px;
+				background: $blue;
+				border-radius: 2px;
+			}
+		}
+		.icon {
+			width: 20px;
+			height: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+		}
+		&--exit {
+			margin-top: auto;
+		}
+	}
+}
+.about {
+	&__content {
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 50px 30px;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__img {
+		margin-bottom: 32px;
+	}
+
+	&__text {
+		text-align: center;
+		max-width: 535px;
+		color: $gray;
+	}
+}
+.calendar {
+	position: absolute;
+	top: 15px;
+	transform: translateX(-50%);
+	left: 50%;
+	padding: 20px 10px 10px;
+	background: $gray3;
+	box-shadow: 2px 7px 10px 2px rgba(38, 50, 56, 0.15);
+	border-radius: 10px;
+	width: 100%;
+	max-width: 300px;
+	font-family: "Inter";
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	&__left.icon {
+		transform: none;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		position: static;
+		color: $blue;
+		pointer-events: visible;
+		&:hover {
+			background: $gray3;
+		}
+	}
+
+	&__month {
+		font-size: 14px;
+	}
+
+	&__right.icon {
+		transform: none;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		position: static;
+		color: $blue;
+		pointer-events: visible;
+		border-radius: 5px;
+		&:hover {
+			background: $gray3;
+		}
+	}
+
+	&__table {
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+		color: $black2;
+		// line-height: 26px;
+		border-spacing: 0px 11px;
+	}
+
+	&__table-head {
+		color: $gray;
+		.calendar__table-day {
+			cursor: default;
+		}
+	}
+
+	&__table-row {
+	}
+
+	&__table-day {
+		padding: unset;
+		cursor: pointer;
+		span {
+			display: inline-block;
+			width: 17px;
+			height: 16px;
+		}
+	}
+
+	&__table-body {
+	}
+
+	&__table-day:hover {
+		span {
+			border-radius: 2px;
+			background: $gray;
+		}
+	}
+
+	&__table-day.active,
+	&__table-day:active {
+		span {
+			border-radius: 2px;
+			background: $blue;
+			color: $white;
+		}
+	}
+
+	&__table-day--another {
+		color: $gray;
+	}
+}
